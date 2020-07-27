@@ -133,7 +133,7 @@ namespace SIMS.Controllers
                 issuer: _config["Jwt:key"],
                 audience: _config["Jwt:issuer"],
                 claims: claims,
-                expires: DateTime.Now.AddSeconds(5),
+                expires: DateTime.UtcNow.AddSeconds(30),
                 signingCredentials: credentials
                 );
             IdentityModelEventSource.ShowPII = true;
@@ -170,8 +170,7 @@ namespace SIMS.Controllers
                     IssuerSigningKey = new SymmetricSecurityKey(key),
                     ValidateIssuer = false,
                     ValidateAudience = false,
-
-                    //   ClockSkew = TimeSpan.Zero
+                    ClockSkew = TimeSpan.Zero
                 };
                 SecurityToken securityToken;
                 var principle = tokenHandeler.ValidateToken(accessToken, tokenValidationParameter, out securityToken);
