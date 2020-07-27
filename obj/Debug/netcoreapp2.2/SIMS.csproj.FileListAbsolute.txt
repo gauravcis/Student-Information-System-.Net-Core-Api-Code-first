@@ -1,0 +1,46 @@
+G:\moreYehs\SIMS\bin\Debug\netcoreapp2.2\appsettings.Development.json
+G:\moreYehs\SIMS\bin\Debug\netcoreapp2.2\appsettings.json
+G:\moreYehs\SIMS\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+G:\moreYehs\SIMS\bin\Debug\netcoreapp2.2\SIMS.deps.json
+G:\moreYehs\SIMS\bin\Debug\netcoreapp2.2\SIMS.runtimeconfig.json
+G:\moreYehs\SIMS\bin\Debug\netcoreapp2.2\SIMS.runtimeconfig.dev.json
+G:\moreYehs\SIMS\bin\Debug\netcoreapp2.2\SIMS.dll
+G:\moreYehs\SIMS\bin\Debug\netcoreapp2.2\SIMS.pdb
+G:\moreYehs\SIMS\obj\Debug\netcoreapp2.2\SIMS.csprojAssemblyReference.cache
+G:\moreYehs\SIMS\obj\Debug\netcoreapp2.2\SIMS.RazorAssemblyInfo.cache
+G:\moreYehs\SIMS\obj\Debug\netcoreapp2.2\SIMS.RazorAssemblyInfo.cs
+G:\moreYehs\SIMS\obj\Debug\netcoreapp2.2\SIMS.AssemblyInfoInputs.cache
+G:\moreYehs\SIMS\obj\Debug\netcoreapp2.2\SIMS.AssemblyInfo.cs
+G:\moreYehs\SIMS\obj\Debug\netcoreapp2.2\SIMS.RazorTargetAssemblyInfo.cache
+G:\moreYehs\SIMS\obj\Debug\netcoreapp2.2\SIMS.dll
+G:\moreYehs\SIMS\obj\Debug\netcoreapp2.2\SIMS.pdb
+D:\Gaurav\learning\Asp. net Core\api\SIMS\obj\Debug\netcoreapp2.2\SIMS.csproj.CoreCompileInputs.cache
+D:\Gaurav\learning\Asp. net Core\api\SIMS\obj\Debug\netcoreapp2.2\SIMS.RazorAssemblyInfo.cache
+D:\Gaurav\learning\Asp. net Core\api\SIMS\obj\Debug\netcoreapp2.2\SIMS.RazorAssemblyInfo.cs
+D:\Gaurav\learning\Asp. net Core\api\SIMS\obj\Debug\netcoreapp2.2\SIMS.AssemblyInfoInputs.cache
+D:\Gaurav\learning\Asp. net Core\api\SIMS\obj\Debug\netcoreapp2.2\SIMS.AssemblyInfo.cs
+D:\Gaurav\learning\Asp. net Core\api\SIMS\bin\Debug\netcoreapp2.2\SIMS.deps.json
+D:\Gaurav\learning\Asp. net Core\api\SIMS\bin\Debug\netcoreapp2.2\SIMS.runtimeconfig.json
+D:\Gaurav\learning\Asp. net Core\api\SIMS\bin\Debug\netcoreapp2.2\SIMS.runtimeconfig.dev.json
+D:\Gaurav\learning\Asp. net Core\api\SIMS\bin\Debug\netcoreapp2.2\SIMS.dll
+D:\Gaurav\learning\Asp. net Core\api\SIMS\bin\Debug\netcoreapp2.2\SIMS.pdb
+D:\Gaurav\learning\Asp. net Core\api\SIMS\obj\Debug\netcoreapp2.2\SIMS.RazorTargetAssemblyInfo.cache
+D:\Gaurav\learning\Asp. net Core\api\SIMS\obj\Debug\netcoreapp2.2\SIMS.dll
+D:\Gaurav\learning\Asp. net Core\api\SIMS\obj\Debug\netcoreapp2.2\SIMS.pdb
+D:\Gaurav\learning\Asp. net Core\api\SIMS\obj\Debug\netcoreapp2.2\SIMS.csprojAssemblyReference.cache
+G:\CIS\Projects\StudentInformationManagementSystem\Asp. net Core\api\SIMS\bin\Debug\netcoreapp2.2\appsettings.Development.json
+G:\CIS\Projects\StudentInformationManagementSystem\Asp. net Core\api\SIMS\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+G:\CIS\Projects\StudentInformationManagementSystem\Asp. net Core\api\SIMS\bin\Debug\netcoreapp2.2\appsettings.json
+G:\CIS\Projects\StudentInformationManagementSystem\Asp. net Core\api\SIMS\bin\Debug\netcoreapp2.2\SIMS.deps.json
+G:\CIS\Projects\StudentInformationManagementSystem\Asp. net Core\api\SIMS\bin\Debug\netcoreapp2.2\SIMS.runtimeconfig.json
+G:\CIS\Projects\StudentInformationManagementSystem\Asp. net Core\api\SIMS\bin\Debug\netcoreapp2.2\SIMS.runtimeconfig.dev.json
+G:\CIS\Projects\StudentInformationManagementSystem\Asp. net Core\api\SIMS\bin\Debug\netcoreapp2.2\SIMS.dll
+G:\CIS\Projects\StudentInformationManagementSystem\Asp. net Core\api\SIMS\bin\Debug\netcoreapp2.2\SIMS.pdb
+G:\CIS\Projects\StudentInformationManagementSystem\Asp. net Core\api\SIMS\obj\Debug\netcoreapp2.2\SIMS.csprojAssemblyReference.cache
+G:\CIS\Projects\StudentInformationManagementSystem\Asp. net Core\api\SIMS\obj\Debug\netcoreapp2.2\SIMS.RazorAssemblyInfo.cache
+G:\CIS\Projects\StudentInformationManagementSystem\Asp. net Core\api\SIMS\obj\Debug\netcoreapp2.2\SIMS.RazorAssemblyInfo.cs
+G:\CIS\Projects\StudentInformationManagementSystem\Asp. net Core\api\SIMS\obj\Debug\netcoreapp2.2\SIMS.AssemblyInfoInputs.cache
+G:\CIS\Projects\StudentInformationManagementSystem\Asp. net Core\api\SIMS\obj\Debug\netcoreapp2.2\SIMS.AssemblyInfo.cs
+G:\CIS\Projects\StudentInformationManagementSystem\Asp. net Core\api\SIMS\obj\Debug\netcoreapp2.2\SIMS.RazorTargetAssemblyInfo.cache
+G:\CIS\Projects\StudentInformationManagementSystem\Asp. net Core\api\SIMS\obj\Debug\netcoreapp2.2\SIMS.dll
+G:\CIS\Projects\StudentInformationManagementSystem\Asp. net Core\api\SIMS\obj\Debug\netcoreapp2.2\SIMS.pdb
