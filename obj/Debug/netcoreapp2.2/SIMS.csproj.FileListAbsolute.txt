@@ -44,3 +44,17 @@ G:\CIS\Projects\StudentInformationManagementSystem\Asp. net Core\api\SIMS\obj\De
 G:\CIS\Projects\StudentInformationManagementSystem\Asp. net Core\api\SIMS\obj\Debug\netcoreapp2.2\SIMS.RazorTargetAssemblyInfo.cache
 G:\CIS\Projects\StudentInformationManagementSystem\Asp. net Core\api\SIMS\obj\Debug\netcoreapp2.2\SIMS.dll
 G:\CIS\Projects\StudentInformationManagementSystem\Asp. net Core\api\SIMS\obj\Debug\netcoreapp2.2\SIMS.pdb
+D:\Gaurav\learning\Angular\Student-Information-System-.Net-Core-Api-Code-first\bin\Debug\netcoreapp2.2\SIMS.deps.json
+D:\Gaurav\learning\Angular\Student-Information-System-.Net-Core-Api-Code-first\bin\Debug\netcoreapp2.2\SIMS.runtimeconfig.json
+D:\Gaurav\learning\Angular\Student-Information-System-.Net-Core-Api-Code-first\bin\Debug\netcoreapp2.2\SIMS.runtimeconfig.dev.json
+D:\Gaurav\learning\Angular\Student-Information-System-.Net-Core-Api-Code-first\bin\Debug\netcoreapp2.2\SIMS.dll
+D:\Gaurav\learning\Angular\Student-Information-System-.Net-Core-Api-Code-first\bin\Debug\netcoreapp2.2\SIMS.pdb
+D:\Gaurav\learning\Angular\Student-Information-System-.Net-Core-Api-Code-first\obj\Debug\netcoreapp2.2\SIMS.csprojAssemblyReference.cache
+D:\Gaurav\learning\Angular\Student-Information-System-.Net-Core-Api-Code-first\obj\Debug\netcoreapp2.2\SIMS.csproj.CoreCompileInputs.cache
+D:\Gaurav\learning\Angular\Student-Information-System-.Net-Core-Api-Code-first\obj\Debug\netcoreapp2.2\SIMS.RazorAssemblyInfo.cache
+D:\Gaurav\learning\Angular\Student-Information-System-.Net-Core-Api-Code-first\obj\Debug\netcoreapp2.2\SIMS.RazorAssemblyInfo.cs
+D:\Gaurav\learning\Angular\Student-Information-System-.Net-Core-Api-Code-first\obj\Debug\netcoreapp2.2\SIMS.AssemblyInfoInputs.cache
+D:\Gaurav\learning\Angular\Student-Information-System-.Net-Core-Api-Code-first\obj\Debug\netcoreapp2.2\SIMS.AssemblyInfo.cs
+D:\Gaurav\learning\Angular\Student-Information-System-.Net-Core-Api-Code-first\obj\Debug\netcoreapp2.2\SIMS.RazorTargetAssemblyInfo.cache
+D:\Gaurav\learning\Angular\Student-Information-System-.Net-Core-Api-Code-first\obj\Debug\netcoreapp2.2\SIMS.dll
+D:\Gaurav\learning\Angular\Student-Information-System-.Net-Core-Api-Code-first\obj\Debug\netcoreapp2.2\SIMS.pdb
