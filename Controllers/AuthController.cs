@@ -49,7 +49,9 @@ namespace SIMS.Controllers
                 _SIMSContext.refreshTokens.Add(refreshToken);
                 _SIMSContext.SaveChanges();
 
-               
+                var JwtTokenExpirey = DateTime.UtcNow.AddMinutes(Convert.ToDouble(_config["Jwt:JwtExpire"]));
+                var RefreshTokenExpire = DateTime.UtcNow.AddYears(Convert.ToInt32(_config["Jwt:JwtRefreshExpire"]));
+
 
                 return Ok(new
                 {
@@ -57,9 +59,13 @@ namespace SIMS.Controllers
                     Email = user.Email,
                     status = 200,
                     message = "Login Success",
+                    CurrentTime = DateTime.Now,
                     JwtToken = tokenStr,
+                    JwtTokenExpirey = JwtTokenExpirey,
                     RefreshToken = refreshToken.Token,
-                    Auth = true
+                    RefreshTokenExpire = RefreshTokenExpire,
+                    Auth = true,
+
                     
                 });
             }
@@ -84,7 +90,12 @@ namespace SIMS.Controllers
             {
                 try
                 {
-                    await _emailService.SendEmail(EmailModel.Email, EmailModel.Subject, EmailModel.Message);
+                    Random generator = new Random();
+                    int otp = generator.Next(10000, 99999);
+                    var Subject = "Email Verification | SIMS";
+                    var Message = "Your verification Code is :"+otp;
+
+                    await _emailService.SendEmail(EmailModel.Email, Subject, Message);
                     return Ok(new { status = 200, message = "Email send Successfully " });
                 }
                 catch(Exception e)
@@ -96,6 +107,7 @@ namespace SIMS.Controllers
            
         }
 
+        
         // Refresh Token Controller 
         [HttpPost("RefreshToken")]
         public IActionResult RefreshToken([FromBody]RefreshRequest refreshRequest)
@@ -110,9 +122,12 @@ namespace SIMS.Controllers
 
                 return Ok(new { newjwtToken = userWithToken });
             }
+            else {
+                return BadRequest();
+            }
 
 
-            return Ok();
+            
         }
 
         //genrate JWT (AccessToken)
@@ -133,7 +148,7 @@ namespace SIMS.Controllers
                 issuer: _config["Jwt:key"],
                 audience: _config["Jwt:issuer"],
                 claims: claims,
-                expires: DateTime.UtcNow.AddSeconds(30),
+                expires: DateTime.UtcNow.AddMinutes(Convert.ToDouble(_config["Jwt:JwtExpire"])), //after how much time we need refresh token 
                 signingCredentials: credentials
                 );
             IdentityModelEventSource.ShowPII = true;
@@ -153,7 +168,7 @@ namespace SIMS.Controllers
                 rng.GetBytes(randomNumber);
                 refreshToken.Token =  Convert.ToBase64String(randomNumber);
             }
-            refreshToken.ExpiryDate = DateTime.UtcNow.AddMonths(6);
+            refreshToken.ExpiryDate = DateTime.UtcNow.AddYears(Convert.ToInt32(_config["Jwt:JwtRefreshExpire"])); // refresh token can use upto
             return refreshToken;
         }
 
@@ -170,7 +185,8 @@ namespace SIMS.Controllers
                     IssuerSigningKey = new SymmetricSecurityKey(key),
                     ValidateIssuer = false,
                     ValidateAudience = false,
-                    ClockSkew = TimeSpan.Zero
+                    ClockSkew = TimeSpan.FromDays(3) // inactivity time
+                  //  ClockSkew = TimeSpan.FromSeconds(1)
                 };
                 SecurityToken securityToken;
                 var principle = tokenHandeler.ValidateToken(accessToken, tokenValidationParameter, out securityToken);
@@ -205,5 +221,7 @@ namespace SIMS.Controllers
             }
             return false;
         }
+
+        
     }
 }

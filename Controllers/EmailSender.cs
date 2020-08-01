@@ -44,5 +44,21 @@ namespace SIMS.Controllers
             }
             await Task.CompletedTask;
         }
+
+        public int SendOtp(string Email, string Subject, string Message) {
+            Random generator = new Random();
+            int otp = generator.Next(10000, 99999);
+            var body = Message + " :" + otp;
+
+            try {
+                SendEmail(Email, Subject, body);
+                return otp;
+            }
+            catch (Exception e) {
+                return 0;
+            }
+
+
+        }
     }
 }
