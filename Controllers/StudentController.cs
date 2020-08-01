@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SIMS.Models;
+using SIMS.Services;
 
 namespace SIMS.Controllers
 {
@@ -18,10 +19,13 @@ namespace SIMS.Controllers
     {
 
         private readonly SIMSContext _SIMSContext;
+        private readonly IEmailService _emailSender;
 
-        public StudentController(SIMSContext sIMSContext)
+
+        public StudentController(SIMSContext sIMSContext, IEmailService emailSender)
         {
             _SIMSContext = sIMSContext;
+            _emailSender = emailSender;
         }
 
 
@@ -60,18 +64,26 @@ namespace SIMS.Controllers
         // Add new Student 
         [HttpPost("RegisterStudent")]
         //for jwt authentication
-        //[Authorize]
+        [Authorize]
         public IActionResult AddNewStudentList([FromBody]Student student)
         {
+
             _SIMSContext.Students.Add(student);
             try
             {
-                _SIMSContext.SaveChanges();
-                return Ok(new { status = 200, message = "Student Added Successfully" });
+                
+                int otp = _emailSender.SendOtp(student.Email, "Email Verification", "Your Otp is ");
+
+                if(otp == 20202) 
+                {
+                    _SIMSContext.SaveChanges();
+                    return Ok(new { status = 200, message = "Student Added Successfully" });
+                }
+                return Ok(new { status = 201, message = "Otp verification failed" });
             }
             catch(Exception Exception)
             {
-                return Ok(new { message = "Student Added Failed",errorMsg= Exception.InnerException.Message });
+                return Ok(new { status = 201, message = "Student Added Failed",errorMsg= Exception.InnerException.Message });
             }
         }
 
@@ -137,5 +149,7 @@ namespace SIMS.Controllers
             }
 
         }
+
+
     }
 }

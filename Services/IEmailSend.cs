@@ -7,6 +7,8 @@ namespace SIMS.Services
 {
     public interface IEmailService
     {
-        Task SendEmail(string email , string subject, string message);
+        Task SendEmail(string email, string subject, string message);
+
+        int SendOtp(string Email, string Subject, string Message);
     }
 }
